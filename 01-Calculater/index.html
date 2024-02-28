@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="calcalutor">
+            <form>
+                <div class="display">
+                    <input type="text" name="display"><!--Here we will display the result of the calculator-->
+                </div>
+
+                <div>
+                    <!--~1=Here we want 4 buttons in the first row-->
+
+                    <input type="button" value="AC" onclick="display.value = ''" class="operator"> <!--AC means all clear-->
+
+                    <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0, -1)"> <!--DE means delete -->
+
+                    <input type="button" value="." onclick="display.value += '.'" class="operator"> 
+
+                    <input type="button" value="/" onclick="display.value += '/'" class="operator"> 
+                </div>
+                <div>
+                    <!--~2=Here we want 4 buttons in the first row-->
+
+                    <input type="button" value="7" onclick="display.value += '7'"> <!--AC means all clear-->
+
+                    <input type="button" value="8" onclick="display.value += '8'"> <!--DE means delete -->
+
+                    <input type="button" value="9" onclick="display.value += '9'"> 
+
+                    <input type="button" value="*" onclick="display.value += '*'" class="operator"><!-- * here is asterik for multiply--> 
+                </div>
+                <div>
+                    <!--~3=Here we want 4 buttons in the first row-->
+
+                    <input type="button" value="4" onclick="display.value += '4'"> <!--AC means all clear-->
+
+                    <input type="button" value="5" onclick="display.value += '5'"> <!--DE means delete -->
+
+                    <input type="button" value="6" onclick="display.value += '6'"> 
+
+                    <input type="button" value="-" onclick="display.value += '-'" class="operator"><!-- * here is minus for substraction--> 
+                </div>
+                <div>
+                    <!--~4=Here we want 4 buttons in the first row-->
+
+                    <input type="button" value="1" onclick="display.value += '1'"> <!--AC means all clear-->
+
+                    <input type="button" value="2" onclick="display.value += '2'"> <!--DE means delete -->
+
+                    <input type="button" value="3" onclick="display.value += '3'"> 
+
+                    <input type="button" value="+" onclick="display.value += '+'" class="operator"><!-- * here is plus (+) for addition--> 
+                </div>
+                <div>
+                    <!--~5=Here we want 4 buttons in the first row-->
+
+                    <input type="button" value="00" onclick="display.value += '00'"> <!--AC means all clear-->
+
+                    <input type="button" value="0" onclick="display.value += '0'"> <!--DE means delete -->
+
+                    <input type="button" value="=" onclick="display.value = eval(display.value)"  class="theEquals operator" >  
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
